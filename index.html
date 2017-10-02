@@ -7,7 +7,7 @@
 
   </head>
   <body>
-    <h1>Ligne de commande</h1>
+    <h2>Ligne de commande</h2>
       <p>Terminal : firefox</p>
       <p>gedit : bloc note</p>
       <p>cd .. : revenir dans le dossier d'avant</p>
@@ -27,10 +27,10 @@
       <p>ECRIRE HTML dans atom = structure fait</p>
       <p>Shift et selectionner les lignes dans atom</p>
 
-    <h1>Information sur github</h1>
+    <h2>Information sur github</h2>
       <p>guide git : https://rogerdudler.github.io/git-guide/index.fr.html</p>
 
-    <h1>Ligne de commande pour l'affichage</h1>
+    <h2>Ligne de commande pour l'affichage</h2>
       <p>Afficher le manuel pour la commande ls : man ls</p>
       <p>Afficher le contenu du dossier courant: ls</p>
       <p>Afficher le contenu du dossier courant avec les fichiers cachés: ls -a</p>
@@ -51,10 +51,26 @@
       <p>Pour rentrer dans le fichier : nano index.html</p>
       <p>Déplacer le fichier style.css dans le dossier css du dossier assets :  mv style.css assets/css/</p>
 
-    <h1>Information sur les tableaux</h1>
+    <h2>Information sur les tableaux</h2>
       <p>Pour les tableaux: http://hypermedia.univ-paris8.fr/jean/internet/ex_table.html</p>
 		  <p>http://formation.upyupy.fr/html-xhtml/tableaux-html/</p>
 
-    <h1>Information sur les formulaires</h1>
+    <h2>Information sur les formulaires</h2>
       <p>Pour les formulaire: https://developer.mozilla.org/fr/docs/Web/Guide/HTML/Formulaires Mon_premier_formulaire_HTML</p>
       <p>Pour lesformulaire avancée: https://developer.mozilla.org/fr/docs/Web/Guide/HTML/Formulaires</p>
+
+    <h2>Procédure d'installation d'un vhost</h2>
+      <ol>
+        <li>Se trouver dans le dossier cd/etc/apache2/sites-available/</li>
+        <li>cp pour copier et renommer: cp copier => exercice1 renommer => exercie2</li>
+        <li>Taper nano + nom du fichier</li>
+        <li>Faire ctrl + w et ctrl +r ensuite taper le nom du fichier à renommer et le nom du fichier renommer</li>
+        <li>Enregistrer avec ctrl + o</li>
+        <li>Retourner dans le dossier /etc et taper nano hosts</li>
+        <li>Taper la ligne 127.0.0.1 + nom du fichier</li>
+        <li>Dans /etc taper a2ensite + nom du fichier.conf</li>
+        <li>Taper systemctl reload apache2</li>
+        <li>Quitter le mode root</li>
+        <li>Allez dans cd~/www/dossier en question</li>
+        <li>Taper systemctl restart apache2</li>
+      </ol>

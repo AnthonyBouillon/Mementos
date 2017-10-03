@@ -2,76 +2,107 @@
 <html>
    <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Mon Mémento</title>
   </head>
   <body>
-    <h2>Ligne de commande</h2>
-      <p>Terminal : firefox</p>
-      <p>gedit : bloc note</p>
-      <p>cd .. : revenir dans le dossier d'avant</p>
-      <p>exit : pour se retirer du root</p>
-      <p>rm -rf (nomdudossier): supprimer un dossier (attention)</p>
-      <p>touch : crée un fichier</p>
-      <p>mkdir : créer un ou plusieur dossier cote a cote</p>
-      <p>mkdir -p crée un dossier et sous dossier</p>
-      <p>mv : déplacer</p>
-      <p>dpkg -i nomdufichier : installer un exe</p>
-      <p>root : sudo -s</p>
-      <p>apt update : paquet liste</p>
-      <p>apt upgrade : mise a jour</p>
-      <p>nano nomDuFichier : Ouvrir un fichier</p>
-      <p>shift ctrl m = affichage portable sur navigateur</p>
-      <p>ctrl + f pour rechercher une lettre ou mot</p>
-      <p>ECRIRE HTML dans atom = structure fait</p>
-      <p>Shift et selectionner les lignes dans atom</p>
+    <h1>Mon Memento</h1>
+    <br><br>
+    <div class="conteneur">
+      <div>
+      <h2>Procédure d'installation d'un vhost</h2>
+        <ol>
+          <li>Se trouver dans le dossier cd/etc/apache2/sites-available/</li>
+          <li>cp pour copier et renommer: cp copier => exercice1 renommer => exercie2</li>
+          <li>Taper nano + nom du fichier</li>
+          <li>Faire ctrl + w et ctrl +r ensuite taper le nom du fichier à renommer et le nom du fichier renommer</li>
+          <li>Enregistrer avec ctrl + o</li>
+          <li>Retourner dans le dossier /etc et taper nano hosts</li>
+          <li>Taper la ligne 127.0.0.1 + nom du fichier</li>
+          <li>Dans /etc taper a2ensite + nom du fichier.conf</li>
+          <li>Taper systemctl reload apache2</li>
+          <li>Quitter le mode root</li>
+          <li>Allez dans cd~/www/dossier en question</li>
+          <li>Taper systemctl restart apache2</li>
+        </ol>
+      </div>
 
-    <h2>Information sur github</h2>
-      <p>guide git : https://rogerdudler.github.io/git-guide/index.fr.html</p>
+      <div class="git">
+      <h2>Procédure création et d'envoi d'un fichier git</h2>
+          <p>Guide git : <a href="https://rogerdudler.github.io/git-guide/index.fr.html">clique ici</a></p>
+        <ol>
+          <li>Se trouver dans le dossier en question</li>
+          <li>Git init</li>
+          <li>Créer le répertoire sur github</li>
+          <li>Git remote add + lien </li>
+          <li>Git status</li>
+          <li>Git add + nom du fichier</li>
+          <li>Git status optionnel</li>
+          <li>git commit -m "Ton commentaire"</li>
+          <li>Git push origin</li>
+          <li>Usernane + password</li>
+        </ol>
 
-    <h2>Ligne de commande pour l'affichage</h2>
-      <p>Afficher le manuel pour la commande ls : man ls</p>
-      <p>Afficher le contenu du dossier courant: ls</p>
-      <p>Afficher le contenu du dossier courant avec les fichiers cachés: ls -a</p>
-      <p>Afficher le contenu du dossier courant version longue sans les fichiers cachés: ls -l</p>
-      <p>Afficher le contenu du dossier courant version longue avec les fichiers cachés : ls -Al</p>
-      <p>Afficher le chemin du dossier courant : pwd<p>
-      <p>Se déplacer dans le dossier Document : cd Documents<p>
-      <p>Afficher le contenu de ce dossier : ls<p>
-      <p>Se mettre en super utilisateur : sudo -s<p>
-      <p>Mettre à jour la liste des paquets : apt update ( apt-get)<p>
-      <p>Mettre à jour les paquets : apt upgrade<p>
-      <p>Trouver tous les paquets contenant le mot XML : apt search xtml<p>
-      <p>Installer le paquet git : apt install git</p>
-      <p>Créer un dossier website dans le dossier Document : mkdir website</p>
-      <p>Créer un dossier et un sous dossier en une seule ligne de commande dans le dossier website : Memento/assets : mkdir -p Memento/assets</p>
-      <p>Se déplacer dans le dossier nouvellement créé et faire trois nouveaux dossiers en une seule ligne de commande : css, img, js : mkdir css img js</p>
-      <p>Dans le dossier Memento créer le fichier style.css : touch style.css</p>
-      <p>Pour rentrer dans le fichier : nano index.html</p>
-      <p>Déplacer le fichier style.css dans le dossier css du dossier assets :  mv style.css assets/css/</p>
+      <h3>Mettre à jour sur github</h3>
+        <ol>
+          <li>Git add + nom du fichier
+          <li>Git commit -m "Ton commentaire"</li>
+          <li>Git push origin master</li>
+          <li>Username + password</li>
+        </ol>
+      </div>
 
-    <h2>Information sur les tableaux</h2>
-      <p>Pour les tableaux: http://hypermedia.univ-paris8.fr/jean/internet/ex_table.html</p>
-		  <p>http://formation.upyupy.fr/html-xhtml/tableaux-html/</p>
 
-    <h2>Information sur les formulaires</h2>
-      <p>Pour les formulaire: https://developer.mozilla.org/fr/docs/Web/Guide/HTML/Formulaires Mon_premier_formulaire_HTML</p>
-      <p>Pour lesformulaire avancée: https://developer.mozilla.org/fr/docs/Web/Guide/HTML/Formulaires</p>
+      <div>
+      <h2>Information sur les tableaux</h2>
+        <p>Guide tableaux: <a href="http://hypermedia.univ-paris8.fr/jean/internet/ex_table.html">Clique ici</a></p>
+  		  <p>Guide tableau avancée: <a href="http://formation.upyupy.fr/html-xhtml/tableaux-html/">Clique ici</a></p>
+      </div>
 
-    <h2>Procédure d'installation d'un vhost</h2>
-      <ol>
-        <li>Se trouver dans le dossier cd/etc/apache2/sites-available/</li>
-        <li>cp pour copier et renommer: cp copier => exercice1 renommer => exercie2</li>
-        <li>Taper nano + nom du fichier</li>
-        <li>Faire ctrl + w et ctrl +r ensuite taper le nom du fichier à renommer et le nom du fichier renommer</li>
-        <li>Enregistrer avec ctrl + o</li>
-        <li>Retourner dans le dossier /etc et taper nano hosts</li>
-        <li>Taper la ligne 127.0.0.1 + nom du fichier</li>
-        <li>Dans /etc taper a2ensite + nom du fichier.conf</li>
-        <li>Taper systemctl reload apache2</li>
-        <li>Quitter le mode root</li>
-        <li>Allez dans cd~/www/dossier en question</li>
-        <li>Taper systemctl restart apache2</li>
-      </ol>
+      <div>
+      <h2>Information sur les formulaires</h2>
+        <p>Guide formulaires: <a href="https://developer.mozilla.org/fr/docs/Web/Guide/HTML/Formulaires/Mon_premier_formulaire_HTML">Clique ici</a></p>
+        <p>Guide formulaires avancées: <a href="https://developer.mozilla.org/fr/docs/Web/Guide/HTML/Formulaires">Clique ici</a></p>
+      </div>
+
+      <div >
+      <h2>Ligne de commande</h2>
+        <p>Navigateur format portable ctrl + maj + m</p>
+        <p>Mettre à jour linux : apt upgrade</p>
+        <p>Terminal : firefox</p>
+        <p>gedit : bloc note</p>
+        <p>cd .. : revenir dans le dossier d'avant</p>
+        <p>cd : Entrer dans un dossier (cd /etc)</p>
+        <p>sudo -s : Être en super utilisateur</p>
+        <p>exit : pour se retirer du root</p>
+        <p>rm -rf (nomdudossier): supprimer un dossier (attention)</p>
+        <p>touch : crée un fichier</p>
+        <p>mkdir : créer un ou plusieur dossier</p>
+        <p>mkdir -p crée un dossier et sous dossier</p>
+        <p>mv : déplacer</p>
+        <p>dpkg -i nomdufichier : installer un exe</p>
+        <p>root : sudo -s</p>
+        <p>shift ctrl m = affichage portable sur navigateur</p>
+        <p>ctrl + f pour rechercher une lettre ou mot</p>
+        <p>Afficher le contenu de ce dossier : ls<p>
+        <p>nano nomDuFichier : Ouvrir un fichier</p>
+
+
+
+      <h2>Ligne de commande 2</h2>
+        <p>atom : Ouvrir un fichier avec atom</p>
+        <p>Shift et selectionner les lignes dans atom</p>
+        <p>Afficher le manuel pour la commande ls : man ls</p>
+        <p>Afficher le contenu du dossier courant: ls</p>
+        <p>Les fichiers cachés: ls -a</p>
+        <p>Afficher le contenu du dossier courant version longue: ls -l</p>
+        <p> version longue avec les fichiers cachés : ls -Al</p>
+        <p>Afficher le chemin du dossier courant : pwd<p>
+        <p>Mettre à jour la liste des paquets : apt update ( apt-get)<p>
+        <p>Mettre à jour les paquets : apt upgrade<p>
+        <p>Installer le paquet git : apt install git</p>
+        <p>Pour rentrer dans le fichier : nano index.html</p>
+      </div>
+    </div>
     </body>
   </html>

@@ -1,17 +1,26 @@
 body{
-  background-color: grey;
+  background-color: #E6F4FA;
 }
-
 
 h1{
   text-align: center;
 }
 
-p, li{
-  font-size: 20px;
+.titlearticle{
+  text-align: center;
 }
 
-#containeur{
+#container1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#majgit{
+  width: 60%;
+}
+
+#container2{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

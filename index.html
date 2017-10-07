@@ -3,78 +3,79 @@
    <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <title>Mon Mémento</title>
+    <title>Mon Mémentos</title>
   </head>
   <body>
-    <h1>Mon Mementos</h1>
-    <br><br>
-    <div id="containeur">
-      <div>
-      <h2>Procédure d'installation d'un vhost</h2>
-        <ol>
-          <li>Se trouver dans le dossier cd/etc/apache2/sites-available/</li>
-          <li>cp pour copier et renommer: cp copier => exercice1 renommer => exercie2</li>
-          <li>Taper nano + nom du fichier</li>
-          <li>Faire ctrl + w et ctrl +r ensuite taper le nom du fichier à renommer et le nom du fichier renommer</li>
-          <li>Enregistrer avec ctrl + o</li>
-          <li>Retourner dans le dossier /etc et taper nano hosts</li>
-          <li>Taper la ligne 127.0.0.1 + nom du fichier</li>
-          <li>Dans /etc taper a2ensite + nom du fichier.conf</li>
-          <li>Taper systemctl reload apache2</li>
-          <li>Quitter le mode root</li>
-          <li>Allez dans cd~/www/dossier en question</li>
-          <li>Taper systemctl restart apache2</li>
-        </ol>
+    <h2 class="titlearticle">Git et github</h2>
+    <br>
+    <div id="container1">
+    <div>
+      <h3>Cloner un répertoire sur github</h3>
+        <p>Créer le dossier de destination du répertoire git</p>
+        <p>Commande= git init</p>
+        <p>Commande= git clone < lien > du répertoire</p>
       </div>
-
-      <div class="git">
-      <h2>Procédure création et d'envoi d'un fichier git</h2>
-          <p>Guide git : <a href="https://rogerdudler.github.io/git-guide/index.fr.html">clique ici</a></p>
-        <ol>
-          <li>Se trouver dans le dossier en question</li>
-          <li>Git init</li>
-          <li>Créer le répertoire sur github</li>
-          <li>Git remote add + lien </li>
-          <li>Git status</li>
-          <li>Git add + nom du fichier</li>
-          <li>Git status optionnel</li>
-          <li>git commit -m "Ton commentaire"</li>
-          <li>Git push origin</li>
-          <li>Usernane + password</li>
-        </ol>
-
+      <div>
+      <h3>Envoyez/Récuperer les modifications sur la branch master</h2>
+        <p>Commande= git add < nomDesFichiers ></p>
+        <p>Commande= git commit -m "commentaire"</p>
+        <p>Commande= git pull origin master</p>
+        <p>Commande= git push origin master</p>
+      </div>
+      <div>
+      <h3>Les branches dans git</h3>
+        <p>Créer une branch = git branch < nomDeBranch ></p>
+        <p>Voir les branches créer = git branch</p>
+        <p>Basculer sur l'autre branch = git checkout < nomDeBranch ></p>
+        <p>Pour fusionner deux branches	= git merge < nomDeBranch ></p>
+        <p>Pour supprimer une branch vide	= git branch -d < nomDeBranch> </p>
+        <p>Pour supprimer une branch non vide	= git branch -D < nomDeBranch ></p>
+      </div>
+      <div>
+      <h3>Procédure création et d'envoi d'un fichier git</h3>
+        <p>Se trouver dans le dossier en question</p>
+        <p>Git init</p>
+        <p>Créer le répertoire sur github</p>
+        <p>Git remote add < lien > </p>
+        <p>Git status</p>
+        <p>Git add < nom du fichier > </p>
+        <p>git commit -m "Ton commentaire"</p>
+        <p>Git push origin master</p>
+        <p>Usernane + password</p>
+      </div>
+      <div id="majgit">
       <h3>Mettre à jour sur github</h3>
-        <ol>
-          <li>Git add + nom du fichier
-          <li>Git commit -m "Ton commentaire"</li>
-          <li>Git push origin master</li>
-          <li>Username + password</li>
-        </ol>
-      </div>
-
-
-      <div>
-      <h2>Information sur les tableaux</h2>
-        <p>Guide tableaux: <a href="http://hypermedia.univ-paris8.fr/jean/internet/ex_table.html">Clique ici</a></p>
-  		  <p>Guide tableau avancée: <a href="http://formation.upyupy.fr/html-xhtml/tableaux-html/">Clique ici</a></p>
-      </div>
-
-      <div>
-      <h2>Information sur les formulaires</h2>
-        <p>Guide formulaires: <a href="https://developer.mozilla.org/fr/docs/Web/Guide/HTML/Formulaires/Mon_premier_formulaire_HTML">Clique ici</a></p>
-        <p>Guide formulaires avancées: <a href="https://developer.mozilla.org/fr/docs/Web/Guide/HTML/Formulaires">Clique ici</a></p>
-      </div>
-
-      <div>
-      <h2>Création d'un select et explication</h2>
-        <a href='https://developer.mozilla.org/fr/docs/Web/HTML/Element/Optgroup'>Clique ici</a>
+        <p>Git add + nom du fichier</p>
+        <p>Git commit -m "Ton commentaire"</p>
+        <p>Git push origin master</p>
+        <p>Username + password</p>
     </div>
+  </div>
+
+    <h2 class="titlearticle">Vhost et divers ligne de commande</h2></br>
+    <div id="container2">
+      <div>
+      <h2>Procédure d'installation d'un Vhost</h2>
+          <p>Se trouver dans le dossier cd/etc/apache2/sites-available/</p>
+          <p>Taper sudo -s pour être en root</p>
+          <p>cp pour copier et renommer= cp copier => nomDuFichier.conf renommer => nomDuFichier.conf</p>
+          <p>Taper nano < nomDuFichier.conf ></p>
+          <p>Faire ctrl + w et ctrl +r ensuite taper le nom du fichier à renommer et le nom du fichier renommer</p>
+          <p>Enregistrer avec ctrl + o</p>
+          <p>Retourner dans le dossier /etc et taper nano hosts</p>
+          <p>Taper la ligne 127.0.0.1 + nom du fichier</p>
+          <p>Dans /etc taper a2ensite < nom du fichier.conf ></p>
+          <p>Taper systemctl reload apache2</p>
+          <p>Quitter le mode root</p>
+          <p>Allez dans cd~/dossier en question</p>
+          <p>Taper systemctl restart apache2</p>
+      </div>
 
       <div >
       <h2>Ligne de commande</h2>
-        <p>Navigateur format portable ctrl + maj + m</p>
-        <p>Mettre à jour linux : apt upgrade</p>
-        <p>Terminal : firefox</p>
+        <p>ctrl + maj + m : Navigateur format portable</p>
+        <p>apt upgrade : Mettre à jour linux</p>
+        <p>firefox : lancer firefox</p>
         <p>gedit : bloc note</p>
         <p>cd .. : revenir dans le dossier d'avant</p>
         <p>cd : Entrer dans un dossier (cd /etc)</p>
@@ -86,27 +87,14 @@
         <p>mkdir -p crée un dossier et sous dossier</p>
         <p>mv : déplacer</p>
         <p>dpkg -i nomdufichier : installer un exe</p>
-        <p>root : sudo -s</p>
-        <p>shift ctrl m = affichage portable sur navigateur</p>
         <p>ctrl + f pour rechercher une lettre ou mot</p>
-        <p>Afficher le contenu de ce dossier : ls<p>
         <p>nano nomDuFichier : Ouvrir un fichier</p>
-
-
-
-      <h2>Ligne de commande 2</h2>
         <p>atom : Ouvrir un fichier avec atom</p>
-        <p>Shift et selectionner les lignes dans atom</p>
-        <p>Afficher le manuel pour la commande ls : man ls</p>
-        <p>Afficher le contenu du dossier courant: ls</p>
-        <p>Les fichiers cachés: ls -a</p>
-        <p>Afficher le contenu du dossier courant version longue: ls -l</p>
-        <p> version longue avec les fichiers cachés : ls -Al</p>
-        <p>Afficher le chemin du dossier courant : pwd<p>
-        <p>Mettre à jour la liste des paquets : apt update ( apt-get)<p>
-        <p>Mettre à jour les paquets : apt upgrade<p>
-        <p>Installer le paquet git : apt install git</p>
-        <p>Pour rentrer dans le fichier : nano index.html</p>
+        <p>pwd : Afficher le chemin du dossier courant<p>
+        <p>apt update : Mettre à jour la liste des paquets <p>
+        <p>apt upgrade : Mettre à jour les paquets<p>
+        <p>apt install git : Installer le paquet git </p>
+        <p>< ?php include'header.php'; ?> : Fusionner des pages header body footer</p>
       </div>
     </div>
     </body>

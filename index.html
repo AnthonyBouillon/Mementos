@@ -14,6 +14,8 @@
         <p>Créer le dossier de destination du répertoire git</p>
         <p>Commande= git init</p>
         <p>Commande= git clone < lien > du répertoire</p>
+        <p> git remote pour envoyez les modifications sur le même répertoire</p>
+        <p>Git merge permet de fusionner deux branch</p>
       </div>
       <div>
       <h3>Envoyez/Récuperer les modifications sur la branch master</h2>
@@ -25,13 +27,14 @@
       <div>
       <h3>Les branches dans git</h3>
         <p>Créer une branch = git branch < nomDeBranch ></p>
+        <p>Créer et basculer sur la branche en même temps = git checkout -b < nomDeBranch ></p>
         <p>Voir les branches créer = git branch</p>
         <p>Basculer sur l'autre branch = git checkout < nomDeBranch ></p>
         <p>Pour fusionner deux branches	= git merge < nomDeBranch ></p>
         <p>Pour supprimer une branch vide	= git branch -d < nomDeBranch> </p>
         <p>Pour supprimer une branch non vide	= git branch -D < nomDeBranch ></p>
       </div>
-      <div>
+      <div id="procedure">
       <h3>Procédure création et d'envoi d'un fichier git</h3>
         <p>Se trouver dans le dossier en question</p>
         <p>Git init</p>
@@ -44,7 +47,8 @@
         <p>Usernane + password</p>
       </div>
       <div id="majgit">
-      <h3>Mettre à jour sur github</h3>
+      <h3>Les commits</h3>
+        <p>Modifier le message du commit c'est : git commit --amend -m "commentaire"</p>
         <p>Git add + nom du fichier</p>
         <p>Git commit -m "Ton commentaire"</p>
         <p>Git push origin master</p>

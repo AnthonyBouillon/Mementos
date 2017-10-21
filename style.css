@@ -14,7 +14,27 @@ h1{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border: 3px solid black;
 }
+
+#container2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 3px solid black;
+}
+
+
+#container3{
+  border: 3px solid black;
+}
+
+#container4{
+  border: 3px solid black;
+}
+
+
+
 
 #procedure{
   width:34%;
@@ -23,10 +43,4 @@ h1{
 
 #majgit{
   width: 60%;
-}
-
-#container2{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }

@@ -2,11 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Astuces</title>
+  <title>Mementos</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <!-- Menu -->
   <div id="container">
     <ul id="menu">
       <li><a href="#">Git/Github</a>
@@ -56,28 +55,34 @@
       </li>
       <li><a href="#">Gestionnaires de dépendances</a>
         <ul>
-          <li><a href="../lib/gestionnaire_bower.html">Bower</a></li>
-          <li><a href="../lib/gestionnaire_grunt.html">Grunt</a></li>
+          <li><a href="gestionnaire_bower.html">Bower</a></li>
+          <li><a href="#">Grunt</a></li>
           <li><a href="#">Suspendisse fringilla</a></li>
         </ul>
       </li>
       <li><a href="../index.html">Index</a></li>
-  </div>
-  <!-- Menu -->
-  <section>
-    <article>
-      <div class="article-content">
-        <h2 id="title-github1">Astuce pour git / github</h2>
-        <p>Git add --all = ajoute tous les fichiers</p>
-        <p>Git commit --amend = modifier sont commentaire</p>
-        <p>Git merge permet de fusionner deux branch</p>
-        <p>CTRL + H dans le dossier en question pour supprimer le fichier .git afin d'envoyez dans un nouveau repertoire</p>
-        <p>Git add < nom du fichier ></p>
-        <p>Git commit -m "Ton commentaire"</p>
-        <p>Git push origin master</p>
-        <p>Usernane + password</p>
-      </div>
-    </article>
-  </section>
-</body>
-</html>
+    </div>
+    <section>
+      <article>
+        <div class="article-content">
+          <h2 id="title-github1">Grunt</h2>
+            <p>Il sert à minifier vos css, js</p>
+            <p><strong>npm init</strong></p>
+            <p><strong>npm install grunt --save-dev</strong> : Installer grunt en local</strong></p>
+            <p><strong>touch Gruntfile.js</strong> : Créer le fichier de configuration</p>
+            <p>Remplir le fichier en fesant un copier coller</strong></p>
+            <p><strong>npm install grunt-contrib-cssmin --save-dev</strong> : Installer le plugin css minifier</p>
+            <p><strong>npm install grunt-contrib-uglify --save-dev</strong> : Installer le plugin js minifier</p>
+            <p><strong>Gruntfile.js</strong> : remplir totalement le fichier</p>
+            <p><strong>grunt css et grunt js</strong> : Effectué la minification</p>
+            <p>Documentation : https://gruntjs.com/</p>
+          </div>
+        </article>
+      </section>
+      <style media="screen">
+      p{
+        font-size: 20px;
+      }
+      </style>
+    </body>
+    </html>

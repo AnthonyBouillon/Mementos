@@ -2,11 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Astuces</title>
+  <title>Mementos</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-  <!-- Menu -->
   <div id="container">
     <ul id="menu">
       <li><a href="#">Git/Github</a>
@@ -56,28 +55,37 @@
       </li>
       <li><a href="#">Gestionnaires de dépendances</a>
         <ul>
-          <li><a href="../lib/gestionnaire_bower.html">Bower</a></li>
-          <li><a href="../lib/gestionnaire_grunt.html">Grunt</a></li>
+          <li><a href="#">Bower</a></li>
+          <li><a href="gestionnaire_grunt.html">Grunt</a></li>
           <li><a href="#">Suspendisse fringilla</a></li>
         </ul>
       </li>
       <li><a href="../index.html">Index</a></li>
-  </div>
-  <!-- Menu -->
-  <section>
-    <article>
-      <div class="article-content">
-        <h2 id="title-github1">Astuce pour git / github</h2>
-        <p>Git add --all = ajoute tous les fichiers</p>
-        <p>Git commit --amend = modifier sont commentaire</p>
-        <p>Git merge permet de fusionner deux branch</p>
-        <p>CTRL + H dans le dossier en question pour supprimer le fichier .git afin d'envoyez dans un nouveau repertoire</p>
-        <p>Git add < nom du fichier ></p>
-        <p>Git commit -m "Ton commentaire"</p>
-        <p>Git push origin master</p>
-        <p>Usernane + password</p>
-      </div>
-    </article>
-  </section>
-</body>
-</html>
+    </div>
+    <section>
+      <article>
+        <div class="article-content">
+          <h2 id="title-github1">Bower</h2>
+          <p>Si il n'est pas déja installer : Pour installer Bower, il faut installer NodeJs et son gestionnaire de paquets npm. </br>-sudo apt install nodejs </br>-sudo apt install npm </br>-sudo npm install -g bower
+            <p>Pour créer un fichier bower.json</br><strong>bower init</strong></p>
+            <p>Si vous avez l'erreur /usr/bin/env: «node»:</br>sudo ln -s /usr/bin/nodejs /usr/bin/node</p>
+            <p>Un fichier bower.json est créé.</br>
+              -Changer le dossier de destination</br>
+              -créer un fichier <strong>.bowerrc</strong> et y taper :</br>
+              {</br>
+                "directory": "lib"</br>
+              }
+            </p>
+            <p>Pour chercher une dépendance : </br><strong>bower search jQuery</strong></p>
+            <p>Installer une dépendance : </br><strong>bower install jQuery --save</strong></p>
+            <p>Documentation sur bower : https://bower.io/</p>
+          </div>
+        </article>
+      </section>
+      <style media="screen">
+        p{
+          font-size: 20px;
+        }
+      </style>
+    </body>
+    </html>
